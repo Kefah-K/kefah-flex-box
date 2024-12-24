@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #333;
+    padding: 1rem 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.blog-list,
+.blog-detail {
+    flex: 1 1 45%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.blog-posts{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.blog-post1, .blog-post2{
+    flex: 1 1 45%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.blog-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-list li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-detail p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .blog-list,
+    .blog-detail {
+        flex: 1 1 100%;
+    }
+}
